@@ -1,5 +1,9 @@
 #Ejercicios de Algoritmos implementados en Javascript
+
+
+
 Implementación de los algoritmos con Javascript
+
 
 ##  Se integran los siguiente algoritmos resueltos: 
 
