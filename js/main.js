@@ -73,3 +73,25 @@ if (par % 2 == 0) {
 } else {
     alert("Es impar");
 }*/
+
+function adivinar() {
+    let superior = 100;
+    let inferior = 0;
+    let noEncontrado = true;
+    while (noEncontrado) {
+        let mid = parseInt(inferior + ((superior - inferior) / 2));
+        if (((superior - inferior) / 2) < 1) {
+            noEncontrado = false;
+            alert("Tu número es el " + (parseInt(mid) + 1));
+            break;
+        }
+        let res = confirm("¿Tu número es menor o igual a " + mid + " ? ");
+        if (res) {
+            superior = mid;
+        } else {
+            inferior = mid;
+        }
+    }
+}
+
+adivinar();
